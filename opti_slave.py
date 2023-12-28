@@ -5,6 +5,8 @@ import reports
 import logging
 from inspect import getmembers
 
+#test comment ___
+
 logging.basicConfig(level=logging.INFO, filename='daily_rep.log', filemode='w',
                     format="%(levelname)s %(message)s")
 
