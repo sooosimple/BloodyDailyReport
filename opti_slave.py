@@ -31,7 +31,7 @@ while exit_flag == '1':
         date_selection = input('Ваш ответ:  ')
 
     if date_selection == '0':
-        date = input('Введите новую дату отчета (ГГГГ-ММ-ДД): ')
+        date = pd.to_datetime(input('Введите новую дату отчета (ГГГГ-ММ-ДД): '))
         print('______________________________________________________________\n')
         report_daily.replacing_date(date=date)
         print(report_daily)
